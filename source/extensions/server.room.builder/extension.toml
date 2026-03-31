@@ -1,0 +1,12 @@
+[package]
+version = "0.1.0"
+title = "Server Room Builder"
+description = "Test Extension"
+category = "Example"
+
+[dependencies]
+"omni.usd" = {}
+"omni.kit.uiapp" = {}
+
+[[python.module]]
+name = "scripts.server_room"
