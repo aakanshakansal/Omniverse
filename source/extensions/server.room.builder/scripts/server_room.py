@@ -88,6 +88,11 @@ class ServerRoomExtension(omni.ext.IExt):
         floor.CreateSizeAttr(50)
         floor.AddScaleOp().Set(Gf.Vec3f(1, 1, 0.05))
         floor.AddTranslateOp().Set(Gf.Vec3f(0, 0, -1))
+        # FLOOR (flat on ground)
+        # floor = UsdGeom.Cube.Define(stage, "/World/Floor")
+        # floor.CreateSizeAttr(50)
+        # floor.AddScaleOp().Set(Gf.Vec3f(1, 1, -0.02))  # thin
+        # floor.AddTranslateOp().Set(Gf.Vec3f(0, 0, 0))  # ground = Z = 0
 
         # ---------------- WALLS ----------------
         walls = [
